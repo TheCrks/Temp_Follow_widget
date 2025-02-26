@@ -50,9 +50,9 @@ def update_data():
             # Change color based on the temperature
             if temp == 0:  # For N/A
                 temp_labels[i].config(bg="white")
-            elif temp < 40:
+            elif temp < 50:
                 temp_labels[i].config(bg="lightgreen")  # Cool
-            elif 40 <= temp < 70:
+            elif 50 <= temp < 75:
                 temp_labels[i].config(bg="yellow")  # Warning
             else:
                 temp_labels[i].config(bg="red")  # Hot
